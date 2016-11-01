@@ -2023,6 +2023,8 @@ NSDecimal CPTNiceLength(NSDecimal length)
 
         CPTPlotArea *thePlotArea = self.plotArea;
         [thePlotArea setNeedsDisplay];
+    } else {
+        [self.mutableBackgroundLImitBands removeAllObjects];
     }
 }
 
